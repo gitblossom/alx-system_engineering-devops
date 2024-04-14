@@ -1,0 +1,10 @@
+have you ever wondered what happens behind the scene when you type “https://www.google.com" into the browser’s address bar and press Enter? The process may seem simple on the surface but you set off a chain of events that involve various technologies working together seamlessly. In this blog we will take a deep dive into the journey of a URL from the moment you hit Enter to the moment you see the Google homepage.
+
+DNS request: as soon as you press enter the browser sends a DNS query to a DNS resolver, which then recursively searches through DNS servers to find the IP address associated with the domain name.
+TCP/IP: With the IP address of the server obtained, the browser initiates a TCP connection to the server to establish a reliable connection between the client (your browser) and the server.
+Firewall: The TCP connection might pass through a firewall, a network security device or software that monitors and controls incoming and outgoing network traffic based on predetermined security rules. Its main purpose is to establish a barrier between a trusted internal network and untrusted external networks.
+HTTPS/SSL: Once the TCP connection is established, the browser sends an HTTP request to the server, HTTPS encrypts the data exchanged between your browser and the server using SSL.
+Load-balancer: a load balancer helps websites and apps handle lots of visitors without crashing or slowing down, it prevents any single server from becoming overwhelmed by the load, thereby improving overall performance and responsiveness.
+Web server: After passing through the load-balancer, the request reaches web server. The web server is responsible for handling HTTP requests, processing them, and generating HTTP responses.
+Application server: The application server executes server-side code, interacts with databases, and generates dynamic content based on the user’s request
+Database: The application server communicates with a database server if the request requires data retrieval or manipulation.
